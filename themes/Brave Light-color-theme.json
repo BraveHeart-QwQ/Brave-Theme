@@ -61,7 +61,9 @@
         "list.focusForeground": "#24292f",
         "list.focusBackground": "#ddf4ff",
         "list.inactiveFocusBackground": "#ddf4ff",
-        "list.highlightForeground": "#0969da",
+        "list.highlightForeground": "#0969da", // 提示匹配字符颜色
+        // "list.highlightForeground": "#cf222e",
+        // "list.highlightForeground": "#24292f",
         "tree.indentGuidesStroke": "#d8dee4",
         "notificationCenterHeader.foreground": "#57606a",
         "notificationCenterHeader.background": "#f6f8fa",
@@ -408,8 +410,6 @@
         {
             "name": "Deep Grey",
             "scope": [
-                "source.css property-name",
-                "source.css property-value",
                 "source.elixir array",
                 "source.elixir scope",
                 "source.elixir section"
@@ -556,9 +556,51 @@
             }
         },
         {
-            "name": "Boolean",
+            "name": "Json,XML Boolean",
             "scope": [
                 "source.json constant.language"
+            ],
+            "settings": {
+                "foreground": "#0184BC"
+            }
+        },
+        /* ---------------- css, less ---------------- */
+        {
+            "name": "css,less Property",
+            "scope": [
+                "source.css support.type.property-name",
+                "source.css support.constant.property-value"
+            ],
+            "settings": {
+                "foreground": "#24292f",
+            }
+        },
+        {
+            "name": "css,less Tag",
+            "scope": [
+                "source.css entity.name.tag",
+                "source.css variable",
+                "source.css punctuation.definition.variable"
+            ],
+            "settings": {
+                "foreground": "#E45649"
+            }
+        },
+        {
+            "name": "css,less Class/Constant",
+            "scope": [
+                "source.css entity.other.attribute-name",
+                "source.css support.constant",
+                "source.css keyword.other.unit"
+            ],
+            "settings": {
+                "foreground": "#A76300"
+            }
+        },
+        {
+            "name": "css,less Function",
+            "scope": [
+                "source.css support.function"
             ],
             "settings": {
                 "foreground": "#0184BC"
