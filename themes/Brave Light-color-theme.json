@@ -282,6 +282,7 @@
             "name": "Comment",
             "scope": [
                 "comment",
+                "punctuation.comment",
                 "punctuation.definition.comment", // 注释符号
                 "storage.type.class.doxygen",
                 "comment variable.parameter",
@@ -351,13 +352,14 @@
         {
             "name": "Method",
             "scope": [
-                "link",
                 "require",
                 "entity.name.function",
                 "special-method",
                 "any-method",
                 "preprocessor",
-                "entity.name.section", // Markdown 的标题
+                "entity.name.section", // Markdown 标题
+                "string.other.link.title", // Markdown 链接标题
+                "punctuation.definition.heading.markdown", // Markdown 标题符号
                 "source.python meta.function-call.generic", // 函数调用
                 "source.python support.function", // 如：len(), __init__()
             ],
@@ -370,7 +372,6 @@
             "scope": [
                 "quoted",
                 "string",
-                "string.other.link",
                 "punctuation.definition.string", // 字符串引号
             ],
             "settings": {
@@ -381,6 +382,7 @@
             "name": "Special String",
             "scope": [
                 "escape",
+                "support.other.escape",
                 "constant.character.escape",
                 "color",
                 "symbol",
@@ -396,6 +398,7 @@
             "scope": [
                 "bool",
                 "constant",
+                "punctuation.definition.constant",
                 "variable.other.enummember",
                 "variable.other.readwrite",
                 "source.python variable.parameter", // Python 参数变色
@@ -416,35 +419,6 @@
             ],
             "settings": {
                 "foreground": "#696C77"
-            }
-        },
-        /* ---------------- Other ---------------- */
-        {
-            "scope": [
-                "underline"
-            ],
-            "settings": {
-                "fontStyle": "underline",
-            }
-        },
-        {
-            "scope": [
-                "strikethrough"
-            ],
-            "settings": {
-                "fontStyle": "strikethrough"
-            }
-        },
-        {
-            "scope": "markup.bold",
-            "settings": {
-                "fontStyle": "bold",
-            }
-        },
-        {
-            "scope": "italic",
-            "settings": {
-                "fontStyle": "italic",
             }
         },
         {
@@ -474,6 +448,56 @@
         },
         /* ---------------- Markup ---------------- */
         {
+            "name": "Markdown Default",
+            "scope": [
+                "meta.embedded.math.markdown",
+                "text.html.markdown invalid.deprecated"
+            ],
+            "settings": {
+                "foreground": "#24292f",
+                "fontStyle": ""
+            }
+        },
+        {
+            "scope": [
+                "underline",
+                "markup.underline",
+            ],
+            "settings": {
+                "fontStyle": "underline",
+            }
+        },
+        {
+            "scope": [
+                "strikethrough",
+                "markup.strikethrough"
+            ],
+            "settings": {
+                "fontStyle": "strikethrough"
+            }
+        },
+        {
+            "scope": [
+                "bold",
+                "markup.bold",
+                // "punctuation.definition.bold"
+            ],
+            "settings": {
+                // "foreground": "#A76300",
+                "foreground": "#CA1243",
+                "fontStyle": "bold",
+            }
+        },
+        {
+            "scope": [
+                "italic",
+                "markup.italic",
+            ],
+            "settings": {
+                "fontStyle": "italic",
+            }
+        },
+        {
             "scope": [
                 "markup.heading",
                 "markup.heading entity.name"
@@ -484,15 +508,37 @@
             }
         },
         {
-            "scope": "markup.quote",
+            "scope": [
+                "markup.quote",
+                "punctuation.definition.quote",
+                "markup.inserted",
+                "meta.diff.header.to-file",
+                "punctuation.definition.inserted"
+            ],
             "settings": {
                 "foreground": "#116329"
             }
         },
         {
-            "scope": "markup.inline.raw",
+            "name": "Markdown Code",
+            "scope": [
+                "markup.inline.raw",
+                "markup.inline.raw punctuation.definition.raw"
+            ],
             "settings": {
                 "foreground": "#0550ae"
+            }
+        },
+        {
+            "name": "Markdown Math",
+            "scope": [
+                "entity.name.function.math.tex",
+                "punctuation.definition.function.math.tex",
+                "constant.character.math.tex",
+                "punctuation.definition.constant.math.tex",
+            ],
+            "settings": {
+                "foreground": "#0184BC"
             }
         },
         {
@@ -503,16 +549,6 @@
             ],
             "settings": {
                 "foreground": "#82071e"
-            }
-        },
-        {
-            "scope": [
-                "markup.inserted",
-                "meta.diff.header.to-file",
-                "punctuation.definition.inserted"
-            ],
-            "settings": {
-                "foreground": "#116329"
             }
         },
         {
@@ -540,7 +576,7 @@
             "scope": [
                 "source.json support.type.property-name",
                 "source.json punctuation.support.type.property-name",
-                "text.xml entity.name.tag",
+                "entity.name.tag", // 除此之外，还支持 Markup 中的 Tag
             ],
             "settings": {
                 "foreground": "#E45649"
@@ -549,7 +585,8 @@
         {
             "name": "Json,XML Variable",
             "scope": [
-                "text.xml entity.other.attribute-name.xml"
+                "text.xml entity.other.attribute-name",
+                "text.html entity.other.attribute-name"
             ],
             "settings": {
                 "foreground": "#A76300"
