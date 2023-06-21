@@ -276,6 +276,8 @@
                 "source.cs variable.other.readwrite",
                 "source.cs variable.other.object",
                 "source.python constant.other", // 模块变量...
+                "diagram.source.wsd support.variable", // Plantuml
+                "diagram.source.wsd string.quoted",
             ],
             "settings": {
                 "foreground": "#24292f",
@@ -290,11 +292,10 @@
                 "storage.type.class.doxygen",
                 "comment variable.parameter",
                 "source.cpp storage.type.modifier.access.control", // 灰化访问控制符 
-                "source.cpp punctuation.separator.colon.access.control" // 灰化访问控制符 
+                "source.cpp punctuation.separator.colon.access.control", // 灰化访问控制符 
             ],
             "settings": {
                 "foreground": "#A0A1A7",
-                // "foreground": "#6A737D",
                 "fontStyle": "italic"
             }
         },
@@ -302,7 +303,6 @@
             "name": "Type",
             "scope": [
                 "entity.name.type",
-                "class",
                 "entity.other.inherited-class", // Python 里继承
                 "embedded",
                 "source.python meta.function.parameters constant.other.caps", // Python 形参约束类型
