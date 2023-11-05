@@ -374,7 +374,7 @@
             "scope": [
                 "quoted",
                 "string",
-                "punctuation.definition", // 字符串引号
+                "punctuation.definition.char", // 字符串引号
                 "punctuation.definition.string", // 字符串引号
             ],
             "settings": {
