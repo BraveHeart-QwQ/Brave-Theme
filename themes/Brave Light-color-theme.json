@@ -278,6 +278,8 @@
                 "source.python constant.other", // 模块变量...
                 "diagram.source.wsd support.variable", // Plantuml
                 "diagram.source.wsd string.quoted",
+                "variable.other.readwrite", // JS
+                "variable.other.object.js", // JS
             ],
             "settings": {
                 "foreground": "#24292f",
@@ -306,6 +308,7 @@
                 "embedded",
                 "source.python meta.function.parameters constant.other.caps", // Python 形参约束类型
                 "source.python support.type.exception", // Python 形参约束类型
+                "support.class", // JS
             ],
             "settings": {
                 "foreground": "#C18401"
@@ -346,6 +349,7 @@
                 "property-value",
                 "attribute",
                 "attribute-name",
+                "variable.language", // JS 的 this
             ],
             "settings": {
                 "foreground": "#E45649"
@@ -403,9 +407,9 @@
                 "constant",
                 "punctuation.definition.constant",
                 "variable.other.enummember",
-                "variable.other.readwrite",
                 "source.python variable.parameter", // Python 参数变色
                 "source.python variable.parameters", // Python 参数变色
+                "variable.parameter.js", // JavaScript 参数变色
                 "entity.name.lifetime.rust",
             ],
             "settings": {
