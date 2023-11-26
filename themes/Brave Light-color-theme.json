@@ -280,6 +280,7 @@
                 "diagram.source.wsd string.quoted",
                 "variable.other.readwrite", // JS
                 "variable.other.object.js", // JS
+                "storage.type.function.arrow.ts", // TS
             ],
             "settings": {
                 "foreground": "#24292f",
