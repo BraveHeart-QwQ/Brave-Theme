@@ -602,7 +602,9 @@
             "name": "Json,XML Variable",
             "scope": [
                 "text.xml entity.other.attribute-name",
-                "text.html entity.other.attribute-name"
+                "text.html entity.other.attribute-name",
+
+                "comment.block.documentation.cs entity.other.attribute-name",  // C# 注释文档
             ],
             "settings": {
                 "foreground": "#A76300"
