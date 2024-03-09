@@ -273,6 +273,7 @@
                 "variable.other.local",
                 "variable.other.property",
                 /* --- 语言限定 --- */
+                "meta.preprocessor.cs",          // C# 预处理器
                 "source.cs variable.other.readwrite",
                 "source.cs variable.other.object",
                 "source.python constant.other", // 模块变量...
@@ -297,6 +298,12 @@
                 "comment variable.parameter",
                 "source.cpp storage.type.modifier.access.control", // 灰化访问控制符 
                 "source.cpp punctuation.separator.colon.access.control", // 灰化访问控制符 
+
+                "meta.preprocessor.cs keyword",  // C# 预处理器
+                "meta.preprocessor.cs punctuation",  // C# region
+                "meta.preprocessor.cs keyword.preprocessor.region",  // C# region
+                "meta.preprocessor.cs keyword.preprocessor.endregion",  // C# region
+                "meta.preprocessor.cs string",  // C# region
             ],
             "settings": {
                 "foreground": "#A0A1A7",
@@ -324,17 +331,18 @@
                 "storage.type.annotation",
                 "storage.type.primitive",
                 "keyword",
-                "keyword.control",
-                "keyword.operator.logical",
-                "keyword.operator.instanceof",
-                "keyword.operator.delete",
-                "keyword.operator.in",
-                "keyword.operator.of",
-                "keyword.operator.instanceof",
-                "keyword.operator.new",
-                "keyword.operator.typeof",
-                "keyword.operator.void",
-                "keyword.operator.expression",
+                "keyword.operator.expression",  // 如：C# 的 new 关键字
+                // "keyword.control",
+                // "keyword.operator.logical",
+                // "keyword.operator.instanceof",
+                // "keyword.operator.delete",
+                // "keyword.operator.in",
+                // "keyword.operator.of",
+                // "keyword.operator.instanceof",
+                // "keyword.operator.new",
+                // "keyword.operator.typeof",
+                // "keyword.operator.void",
+                // "keyword.operator.expression",
                 "selector",
                 "punctuation.definition.directive", // #define 中的 #
             ],
@@ -596,7 +604,9 @@
             "name": "Json,XML Variable",
             "scope": [
                 "text.xml entity.other.attribute-name",
-                "text.html entity.other.attribute-name"
+                "text.html entity.other.attribute-name",
+
+                "comment.block.documentation.cs entity.other.attribute-name",  // C# 注释文档
             ],
             "settings": {
                 "foreground": "#A76300"
