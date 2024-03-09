@@ -281,6 +281,7 @@
                 "variable.other.readwrite", // JS
                 "variable.other.object.js", // JS
                 "storage.type.function.arrow.ts", // TS
+                "meta.function-call.arguments", // python 里的调用
             ],
             "settings": {
                 "foreground": "#24292f",
@@ -369,6 +370,7 @@
                 "punctuation.definition.heading.markdown", // Markdown 标题符号
                 "source.python meta.function-call.generic", // 函数调用
                 "source.python support.function", // 如：len(), __init__()
+                "meta.function-call", // python 里的调用
             ],
             "settings": {
                 "foreground": "#4078F2"
