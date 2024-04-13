@@ -379,6 +379,8 @@
                 "source.python meta.function-call.generic", // 函数调用
                 "source.python support.function", // 如：len(), __init__()
                 "meta.function-call", // python 里的调用
+                "entity.name.variable.property.cs",  // C# 属性
+                "source.lua support.function",  // Lua 函数
             ],
             "settings": {
                 "foreground": "#4078F2"
