@@ -284,7 +284,6 @@
                 "storage.type.function.arrow.ts", // TS
                 "meta.function-call.arguments", // python 里的调用
                 "variable.other.lua",  // Lua 变量
-                "variable.language.self.lua",  // Lua 符号 ‘:’
             ],
             "settings": {
                 "foreground": "#24292f",
