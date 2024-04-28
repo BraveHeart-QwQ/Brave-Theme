@@ -304,6 +304,7 @@
                 "meta.preprocessor.cs keyword.preprocessor.region",  // C# region
                 "meta.preprocessor.cs keyword.preprocessor.endregion",  // C# region
                 "meta.preprocessor.cs string",  // C# region
+                "keyword.todo.lua",
             ],
             "settings": {
                 "foreground": "#A0A1A7",
