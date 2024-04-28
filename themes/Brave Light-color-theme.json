@@ -283,6 +283,7 @@
                 "variable.other.object.js", // JS
                 "storage.type.function.arrow.ts", // TS
                 "meta.function-call.arguments", // python 里的调用
+                "variable.other.lua",  // Lua 变量
             ],
             "settings": {
                 "foreground": "#24292f",
@@ -380,6 +381,10 @@
                 "source.python meta.function-call.generic", // 函数调用
                 "source.python support.function", // 如：len(), __init__()
                 "meta.function-call", // python 里的调用
+                "entity.name.variable.property.cs",  // C# 属性
+                "source.lua support.function",  // Lua 函数
+                "support.function.lua",  // Lua 函数
+                "source.lua support.function.any-method.lua",
             ],
             "settings": {
                 "foreground": "#4078F2"
