@@ -259,7 +259,7 @@
                 "none",
                 /* --- 符号 --- */
                 "punctuation.definition",
-                // "keyword.operator",  // 很怪，不知道为啥需要这个
+                "keyword.operator",  // 很怪，不知道为啥需要这个
                 "bracket",
                 "comma",
                 "punctuation",
@@ -334,17 +334,17 @@
                 "storage.type.primitive",
                 "keyword",
                 "keyword.operator.expression",  // 如：C# 的 new 关键字
-                // "keyword.control",
-                // "keyword.operator.logical",
-                // "keyword.operator.instanceof",
-                // "keyword.operator.delete",
-                // "keyword.operator.in",
-                // "keyword.operator.of",
-                // "keyword.operator.instanceof",
-                // "keyword.operator.new",
-                // "keyword.operator.typeof",
-                // "keyword.operator.void",
-                // "keyword.operator.expression",
+                "keyword.control",
+                "keyword.operator.logical",
+                "keyword.operator.instanceof",
+                "keyword.operator.delete",
+                "keyword.operator.in",
+                "keyword.operator.of",
+                "keyword.operator.instanceof",
+                "keyword.operator.new",
+                "keyword.operator.typeof",
+                "keyword.operator.void",
+                "keyword.operator.expression",
                 "selector",
                 "punctuation.definition.directive", // #define 中的 #
             ],
