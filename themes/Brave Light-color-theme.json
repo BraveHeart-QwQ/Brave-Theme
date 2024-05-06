@@ -259,7 +259,7 @@
                 "none",
                 /* --- 符号 --- */
                 "punctuation.definition",
-                "keyword.operator",
+                // "keyword.operator",  // 很怪，不知道为啥需要这个
                 "bracket",
                 "comma",
                 "punctuation",
