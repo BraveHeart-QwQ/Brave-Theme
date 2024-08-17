@@ -284,9 +284,11 @@
                 "storage.type.function.arrow.ts", // TS
                 "meta.function-call.arguments", // python 里的调用
                 "variable.other.lua",  // Lua 变量
+                "entity.name.tag.html invalid.illegal.unrecognized-tag.html", // HTML 非标准标签
             ],
             "settings": {
                 "foreground": "#24292f",
+                "fontStyle": "",
             }
         },
         {
