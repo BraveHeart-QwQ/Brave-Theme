@@ -315,6 +315,9 @@
                 "meta.preprocessor.cs keyword.preprocessor.region",  // C# region
                 "meta.preprocessor.cs keyword.preprocessor.endregion",  // C# region
                 "meta.preprocessor.cs string",  // C# region
+
+                "meta.preprocessor.pragma",  // C/C++ 预处理器
+
                 "keyword.todo.lua",
             ],
             "settings": {
