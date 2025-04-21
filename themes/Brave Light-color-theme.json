@@ -279,6 +279,7 @@
                 "square",
                 "terminator",
                 /* --- 其他 --- */
+                "variable.other",
                 "variable.parameter",
                 "variable.other.local",
                 "variable.other.property",
@@ -291,7 +292,9 @@
                 "diagram.source.wsd string.quoted",
                 "variable.other.readwrite", // JS
                 "variable.other.object.js", // JS
+                "support.variable.property.ts", // TS
                 "storage.type.function.arrow.ts", // TS
+                "source.ts punctuation.definition.template-expression", // TS
                 "meta.function-call.arguments", // python 里的调用
                 "variable.other.lua",  // Lua 变量
             ],
